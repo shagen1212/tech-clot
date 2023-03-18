@@ -1,0 +1,121 @@
+:root {
+    --color-blue: #2A7AE4;;
+}
+.body{
+    box-sizing: border-box;
+    font-family: 'Relaway';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 1440px;
+    height: 467px;
+    gap: 20px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 3rem;
+
+    width: 70%;
+}
+
+.header-logo{
+    width: 11rem;
+    height: 3.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 50%;
+    height: 100%;
+}
+
+.logo-tex{
+    font-size: 1.5rem;
+}
+.header-buscador{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-buscador{
+    align-items: center;
+    width: 30rem;
+    height: 2rem;
+}
+
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: var(--color-blue);
+    border-color: #2A7AE4;
+    width:  6rem;
+    cursor: pointer;
+}
+
+.header-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: 
+        url(/assets/StockSnap_FUCDX0FBLZ.jpg)
+        no-repeat
+        center;
+}
+
+.menu-promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1136px;
+    height: 170px;
+    margin: 0 0 20px 0;
+}
+
+.text-promo{
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 60px;
+}
+.text-desc{
+    font-size: 1.7rem;
+    color: #ffffff;
+    line-height: 23px;
+}
+.btn-promo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 2.8rem;
+    background-color: var(--color-blue);
+    border: none;
+    color: #ffffff;
+    font-size: 100%;
+    cursor: pointer;
+}

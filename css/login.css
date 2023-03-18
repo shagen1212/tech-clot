@@ -1,0 +1,276 @@
+:root{
+    --font-principal: 'Raleway', sans-serif;;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    background-color:  #E5E5E5;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.header-principal{
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 3rem;
+    width: 70%;
+}
+.header-buscar{
+    display: flex;
+    justify-content: center;
+}
+.btn-buscar{
+    width: 24px;
+    height: 100%;
+    border: none;
+    background:none;
+}
+.icon-buscar{
+    width: 30px;
+    height: 100%;
+    background: none;
+}
+.header-logo{
+    width: 11rem;
+    height: 3.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 50%;
+    height: 100%;
+}
+.logo-tex{
+    font-size: 1.5rem;
+}
+.header-buscador{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.input-buscador{
+    align-items: center;
+    width: 30rem;
+    height: 2rem;
+    border: none;
+    border-radius: 20px;
+}
+.input-buscador::placeholder{
+    padding: 10px;
+}
+
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: var(--color-blue);
+    border-color: #2A7AE4;
+    width:  6rem;
+    cursor: pointer;
+}
+
+/* Section LOGIN */
+.section-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 33%;
+    width: 423px;
+    height: 291px;
+    gap: 25px;
+}
+
+.btn-entrar{
+    width: 423px;
+    height: 62px;
+    background-color: #2A7AE4;
+    border: none;
+    color: white;
+    font-family: 'Raleway';
+}
+.input-email{
+    width: 423px;
+    height: 63px;   
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #FFFFFF;
+    border-bottom: 0.2px solid #D0D3D4;
+}
+.input-password{
+    width: 423px;
+    height: 63px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #FFFFFF;
+    border-bottom: 0.2px solid #D0D3D4;
+}
+.input-email::placeholder,
+.input-password::placeholder{
+    font-family: 'raleway';
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*                       FOOTER LOGIN                                    */
+
+.footer-info{
+    background: #EAF2FD;
+}
+.footer-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64px 152px;
+}
+.footer-list-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+.footer-contacto-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-input{
+    height: 30px;
+}
+.footer-desa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.text-mensaje{
+    height: 70px;
+}
+.btn-footer{
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    background-color: #2A7AE4;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    /* HEADER */
+    .header-principal{
+        padding: 0px;
+        width: 85%; 
+    }
+    .input-buscador{
+        width: 15rem;
+    }
+    .header-buscar{
+        display: flex;
+    }
+
+    /* SECTION LOGIN */
+    .section-login{
+        width: 275px;
+        height: 189px;
+        padding: 32px 0 50px 0px;
+    }
+    .btn-entrar{
+        width: 60%;
+    }
+    .input-email, .input-password{
+        width: 100%;
+    }
+    
+    /* FOOTER */
+    .footer-info-container{
+        padding: 32px;
+    }
+    .footer-list-menu{
+        gap: 30px;
+        position: absolute;
+        left: 40px;
+        top: 520px;
+    }
+    .footer-contacto{
+        width: 60%;
+    }
+}
+@media (max-width: 360px) {
+
+    /* HEADER */
+    .header-principal{
+        justify-content: space-between;
+    }
+    .header-buscar{
+        order: 2;
+    }
+    .input-buscador{
+        display: none;
+    }
+    .logo-icon{
+        height: 70%;
+    }
+    .logo-tex{
+        margin: 0 20px 0 0;
+    }
+    .btn-login{
+        margin: 0 20px 0 0;
+    }
+    .btn-buscar{
+        display: block;
+        border: none;
+    }
+    .icon-buscar{
+        width: 24px;
+        height: 24px;
+    }
+    /* LOGIN */
+    .section-login{
+        margin: 31px 12%;
+    }
+    /* FOOTER  */
+    .footer-info-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-list-menu{
+        position:static;
+        gap: 16px;
+        align-items: center;
+    }
+    .footer-contacto{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 16px;
+    }
+    .footer-desa{
+        margin: 2rem;
+    }
+}
